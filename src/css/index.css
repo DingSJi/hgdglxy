@@ -1,0 +1,263 @@
+body, div, dl, dt, dd, ul ,ol ,li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, legend, input, textarea, button, p, blockquote, th, td{
+    margin: 0;padding:0;
+}
+body{text-align: center;}
+ul,ol,li{list-style: none;}
+a{text-decoration: none;}
+input,button,img{border:none;vertical-align: middle;}
+
+img{
+    width: 100%;
+}
+#box{
+    position: relative;
+    height:100vh;
+    overflow: hidden;
+}
+.main{
+    position: relative;
+    height: auto;
+}
+.main>div{
+    /* width: 100%; */
+    /* height: 100%; */
+    position: relative;
+}
+
+/* 背景 */
+.main>div{
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0.9;
+}
+
+.banner{
+    /* width: 942px; */
+    width: 100%;
+    height: 51%;
+    margin: 0 auto;
+    padding-top: 10%;
+}
+.banner img{
+  width: 50%;
+}
+.banner .blank{
+  height: 70%;
+}
+/* 索引条 */
+.indexBar{
+  width: 75%;
+  height: 65px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: nowrap;
+  white-space: nowrap;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+.indexBar .itemBar{
+  background-color: rgb(200, 213, 247);
+  opacity: 0.54;
+  line-height: 58px;
+  cursor: pointer;
+}
+.barSelect{
+  background-color: #fff !important;
+  opacity: 1 !important;
+  transition: all 0.3s ease;
+}
+.indexBar .itemBar .bar{
+  border-right: #fff 4px solid;
+  padding: 0 8px;
+  font-size: 24px;
+  color: #333;
+}
+
+/* 轮播图 */
+.slide{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.slideShow{
+    position: relative;
+    width: 1028px;
+    height: 204px;
+    overflow: hidden;
+}
+.slideShow .cards{
+    display: flex;
+    flex-wrap: nowrap;
+    position: relative;
+    transition: left 1s ease;
+    left: 0;
+}
+.slideShow .cards .card{
+    float: left;
+    position: relative;
+    margin-right:20px;
+}
+.slideShow .cards .card>img{
+    width: 242px;
+    height: 138px;
+    /* opacity: 0.9; */
+}
+.slideShow .cards .card .play{
+    position: absolute;
+    top: 25%;
+    left: 40%;
+    cursor: pointer;
+}
+.slideShow .cards .card .title{
+    font-size: 24px;
+    color: #ffffff;
+    line-height: 33px;
+    width: 242px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+}
+.leftArrow{
+    width: 0;
+    height: 0;
+    border: 30px solid;
+    border-color: transparent #fff transparent transparent;
+    cursor: pointer;
+    position: relative;
+    top: -25px;
+    transition: all 0.5s;
+}
+.rightArrow{
+    width: 0;
+    height: 0;
+    border: 30px solid;
+    border-color: transparent transparent transparent #fff;
+    cursor: pointer;
+    position: relative;
+    top: -25px;
+    transition: all 0.5s;
+}
+.leftArrow:hover{
+    transform: scale(1.1);
+    border-color: transparent rgb(217, 171, 171) transparent transparent;
+
+}
+.rightArrow:hover{
+    transform: scale(1.1);
+    border-color: transparent transparent transparent rgb(217, 171, 171);
+
+}
+
+/* 左侧导航栏 */
+
+
+#sectionIndex {
+  position: fixed;
+  top: 10%;
+  left: 2%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+#sectionIndex div{
+  width: 150px;
+  transition: all .4s;
+  cursor: pointer;
+  height: 72px;
+  color: #ffffff;
+  background-repeat: no-repeat;
+  font-size: 20px;
+  text-align: center;
+  line-height: 60px;
+}
+
+/* 视频 */
+.videos{
+    z-index: 23;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    /* display: none; */
+}
+.videos .video-box{
+    width: 640px;
+    height: 360px;
+    z-index: 24;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.videos .video-box video{
+    width: 640px;
+    height: 360px;
+}
+/* .videos .video-box{
+    width: 100%;
+    height: 100%;
+} */
+
+/* 底部 */
+.footer{
+    position: fixed;
+    bottom: 10px;
+    left: 0;
+    display: flex;
+    height: 60px;
+    width: 100%;
+    padding: 0 90px;
+    align-items: center;
+    min-width: 75%;
+}
+.footer .logo{
+    width: 60px;
+}
+.footer .school{
+    margin-left: 30px;
+    width: 322px;
+}
+.footer .text{
+    font-size: 20px;
+    font-weight: 700;
+    color: #ffffff;
+    line-height: 28px;
+}
+.footer .text1{
+    margin-left: 50px;
+    width: 26%;
+}
+.footer .text2{
+    flex: 1;
+    /* text-align: right; */
+}
+
+/* 滚动条样式 */
+
+/*定义滑块
+ 内阴影+圆角*/
+ ::-webkit-scrollbar-thumb
+ {
+     border-radius:10px;
+     -webkit-box-shadow:inset 0 0 6px rgba(0,0,0,.3);
+     background-color:rgb(82, 214, 231);
+ }
+ ::-webkit-scrollbar
+ {
+     width:10px;
+     height:8px;
+     background-color:#F5F5F5;
+ }
+ ::-webkit-scrollbar-track{
+  -webkit-box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  background-color: #f1c9c9;
+ }
+ /* ::-webkit-scrollbar-button {
+  background-color: #333;
+  width: 10px;
+  } */
