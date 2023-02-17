@@ -126,6 +126,7 @@ img{
     /* white-space: nowrap; */
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 2;
+    background-color: rgba(0, 0, 0, 0.1);
 }
 .leftArrow{
     width: 0;
