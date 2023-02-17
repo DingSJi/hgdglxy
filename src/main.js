@@ -1,17 +1,11 @@
 Vue.config.productionTip = false
 
+
 new Vue({
   el: "#root",
   data() {
     return {
-      screenHeight: "",
-      screenWidth: "",
-      page: 0,
-      totalPage: "",
-      scrollstatus: true,//滚动状态
-      speed: 300,
-      refreshPicIndex: true,//刷新轮播图位置
-
+      //------------ 视频数据在此修改 videoUrl需要和文件名一致 --------------
       sections:[
         {
           title:'科 研 项 目',
@@ -69,9 +63,9 @@ new Vue({
               current: false,
               videoList:[
                 {
-                  title: '互联网与大数据环境下 高端装备制造工程管…',
-                  imgUrl: './image/fengmian/封面示例.jpg',
-                  videoUrl: './videos/视频示例.mp4'
+                  title: '互联网与大数据环境下高端装备制造工程管理理论与方法',
+                  imgUrl: './image/fengmian/keyanxiangmu-3-1.png',
+                  videoUrl: './videos/'
                 }
               ]
             },
@@ -81,13 +75,13 @@ new Vue({
               videoList:[
                 {
                   title: '智慧管理信息系统',
-                  imgUrl: './image/fengmian/封面示例.jpg',
-                  videoUrl: './videos/视频示例.mp4'
+                  imgUrl: './image/fengmian/keyanxiangmu-4-1.png',
+                  videoUrl: './videos/'
                 },
                 {
-                  title: '体内复杂受限环境下腔 镜手术机器人三维场…',
-                  imgUrl: './image/fengmian/封面示例.jpg',
-                  videoUrl: './videos/视频示例.mp4'
+                  title: '体内复杂受限环境下腔镜手术机器人三维场景建模与智能控制',
+                  imgUrl: './image/fengmian/keyanxiangmu-4-2.png',
+                  videoUrl: './videos/'
                 }
               ]
             },
@@ -96,9 +90,9 @@ new Vue({
               current: false,
               videoList:[
                 {
-                  title: '数字化供应链中断中的 IT价值创造：基于关…',
-                  imgUrl: './image/fengmian/封面示例.jpg',
-                  videoUrl: './videos/视频示例.mp4'
+                  title: '数字化供应链中断中的IT价值创造：基于关系强度和制度距离视角的实证研究',
+                  imgUrl: './image/fengmian/keyanxiangmu-5-1.png',
+                  videoUrl: './videos/'
                 }
               ]
             },
@@ -110,9 +104,14 @@ new Vue({
           current: false,
           videoList: [
             {
-              title: '智能互联系统的系统工 程理论及应用总体概况',
-              imgUrl: './image/fengmian/封面示例.jpg',
-              videoUrl: './videos/视频示例.mp4'
+              title: '教育部重点实验室：过程优化与智能决策五年工作介绍',
+              imgUrl: './image/fengmian/keyanjidi-1.png',
+              videoUrl: './videos/'
+            },
+            {
+              title: '教育部重点实验室：过程优化与智能决策基本概况',
+              imgUrl: './image/fengmian/keyanjidi-2.png',
+              videoUrl: './videos/'
             }
           ]
         },
@@ -121,9 +120,24 @@ new Vue({
           current: false,
           videoList: [
             {
-              title: '智能互联系统的系统工 程理论及应用总体概况',
-              imgUrl: './image/fengmian/封面示例.jpg',
-              videoUrl: './videos/视频示例.mp4'
+              title: '王刚老师',
+              imgUrl: './image/fengmian/jiaoshifengcai-1.png',
+              videoUrl: './videos/'
+            },
+            {
+              title: '付超老师',
+              imgUrl: './image/fengmian/jiaoshifengcai-2.png',
+              videoUrl: './videos/'
+            },
+            {
+              title: '裴军老师',
+              imgUrl: './image/fengmian/jiaoshifengcai-3.png',
+              videoUrl: './videos/'
+            },
+            {
+              title: '杨颖老师',
+              imgUrl: './image/fengmian/jiaoshifengcai-4.png',
+              videoUrl: './videos/'
             }
           ]
         },
@@ -132,9 +146,14 @@ new Vue({
           current: false,
           videoList: [
             {
-              title: '智能互联系统的系统工 程理论及应用总体概况',
-              imgUrl: './image/fengmian/封面示例.jpg',
-              videoUrl: './videos/视频示例.mp4'
+              title: 'Leveraging Multisource Heterogeneous Data for Financial Risk Prediction:A Novel Hybrid-Strategy-Based Self-Adaptive Method',
+              imgUrl: './image/fengmian/yanjiulunwen-1.png',
+              videoUrl: './videos/'
+            },
+            {
+              title: 'Know Where to Invest: Platform Risk Evaluation in Online Lending',
+              imgUrl: './image/fengmian/yanjiulunwen-2.png',
+              videoUrl: './videos/'
             }
           ]
         },
@@ -143,35 +162,43 @@ new Vue({
           current: false,
           videoList: [
             {
-              title: '智能互联系统的系统工 程理论及应用总体概况',
-              imgUrl: './image/fengmian/封面示例.jpg',
-              videoUrl: './videos/视频示例.mp4'
+              title: '轿车整车产品开发系统平台流程与工程管理系统',
+              imgUrl: './image/fengmian/keyanhuojiang-1.png',
+              videoUrl: './videos/'
             }
           ]
         },
         {
-          title:'教学研究',
+          title:'教 学 研 究',
           current: false,
           videoList: [
             {
-              title: '智能互联系统的系统工 程理论及应用总体概况',
-              imgUrl: './image/fengmian/封面示例.jpg',
-              videoUrl: './videos/视频示例.mp4'
+              title: '管理科学与工程一流学科研究生培养的模式 创新与能力建设研究与实践',
+              imgUrl: './image/fengmian/jiaoxueyanjiu-1.png',
+              videoUrl: './videos/'
             }
           ]
         },
         {
-          title:'国际交流',
+          title:'国 际 交 流',
           current: false,
           videoList: [
             {
-              title: '智能互联系统的系统工 程理论及应用总体概况',
-              imgUrl: './image/fengmian/封面示例.jpg',
-              videoUrl: './videos/视频示例.mp4'
+              title: '高等学校学科创新引智基地',
+              imgUrl: './image/fengmian/guojijiaoliu-1.png',
+              videoUrl: './videos/'
             }
           ]
         }
       ],
+
+      screenHeight: "",
+      screenWidth: "",
+      page: 0,
+      totalPage: "",
+      scrollstatus: true,//滚动状态
+      speed: 0.5,
+      refreshPicIndex: true,//刷新轮播图位置
       videos1: [],//传给第一页组件的数据
       actvideo: {
         src: '',
@@ -257,19 +284,16 @@ new Vue({
         item.current = false;
       })
       this.sections[page].current = true;
-      this.scrollstatus = false;
+      let divs = document.querySelectorAll('.main>div')
       let that = this;
-      $(".main>div").animate(
-          {
-              top: -that.screenHeight * page,
-          },
-          that.speed,
-          function () {
-              setTimeout(() => {
-                  that.scrollstatus = true;
-              }, 300);
-          }
-      );
+      divs.forEach(item => {
+        item.style.top = -that.screenHeight * page + "px";
+        item.style.transition = "all " + speed + "s" + " ease";
+      })
+      this.scrollstatus = false;
+      setTimeout(() => {
+        this.scrollstatus = true;
+      }, 400);
     },
     // 判断滚轮方向
     scrollDirection(e){
@@ -313,75 +337,3 @@ new Vue({
 })
 
 
-// 轮播图组件
-const slide = Vue.extend({
-  template: `
-    <div class="slide">
-      <div class="leftArrow" v-if="videoList.length>4" @click="leftArrowTap"></div>
-      <div class="slideShow" :style="videoList.length>4?'':centerStyleObj">
-          <div class="cards" ref="cards">
-              <div class="card" v-for="item in videoList">
-                  <img :src="item.imgUrl" alt="">
-                  <div class="play" @click="showVideo(item)">
-                      <img src="./image/bofang.png" alt="">
-                  </div>
-                  <div class="title">{{item.title}}</div>
-              </div>
-          </div>
-      </div>
-      <div class="rightArrow" v-if="videoList.length>4" @click="rightArrowTap"></div>
-    </div>
-  `,
-  mounted() {
-    this.videoList = this.videos;
-  },
-  props: ['videos'],
-  data() {
-    return {
-      videoList: [],
-      picIndex: 0,
-      centerStyleObj: {//小于四个元素时居中
-        display: 'flex',
-        justifyContent: 'center'
-      },
-    }
-  },
-  watch: {
-    videos(newval){
-      this.videoList = newval;
-    }
-  },
-  methods: {
-    // 轮播图左右切换按钮点击
-    leftArrowTap(){
-      this.picIndex--;
-      if (this.picIndex < 0) {
-          this.picIndex = 0;
-          return;
-      }
-      this.slideImg();
-    },
-    rightArrowTap(){
-      this.picIndex++;
-      let piclength = this.videoList.length;
-      if (this.picIndex > piclength - 4) {
-          //总数减4
-          this.picIndex = piclength - 4;
-          return;
-      }
-      this.slideImg();
-    },
-    // 轮播图切换方法
-    slideImg() {
-      let width = -1 * 262 * this.picIndex;
-      this.$refs.cards.style.left = width + 'px';
-    },
-    // 点击播放视频
-    showVideo(row) {
-      console.log(row);
-      this.$emit('play',row.videoUrl)
-    },
-  },
-})
-
-Vue.component('slide', slide);
