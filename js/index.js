@@ -83,10 +83,9 @@ $(document).ready(function () {
             slideImg();
             if (e.deltaY > 0) {
                 page++;
-                if (page > 3) {
+                if (page > totalpage-1) {
                     return (page = totalpage - 1);
                 } else {
-                    // console.log(page)
                     scroll(page, speed);
                 }
                 console.log("下滑");
@@ -95,7 +94,6 @@ $(document).ready(function () {
                 if (page < 0) {
                     return (page = 0);
                 } else {
-                    // console.log(page)
                     scroll(page, speed);
                 }
                 console.log("上滑");
@@ -203,8 +201,25 @@ $(document).ready(function () {
                         break;
                 }
                 break;
-            // 超级工程
+            // 图灵奖
             case 2:
+              switch (index) {
+                case 0:
+                    $(".videos .video-box video").attr("src", "./videos/习近平论科技创新.mp4");
+                    $(".videos").show();
+                    break;
+                case 1:
+                    $(".videos .video-box video").attr("src", "./videos/习近平论科技创新.mp4");
+                    $(".videos").show();
+                    break;
+                case 2:
+                    $(".videos .video-box video").attr("src", "./videos/习近平论科技创新.mp4");
+                    $(".videos").show();
+                    break;
+              }
+              break;
+            // 超级工程
+            case 3:
                 switch (index) {
                     case 0:
                         $(".videos .video-box video").attr("src", "./videos/火星探测工程.mp4");
@@ -220,8 +235,9 @@ $(document).ready(function () {
                         break;
                 }
                 break;
+            
             // 世界一流大学
-            case 3:
+            case 4:
                 switch (index) {
                     case 0:
                         $(".videos .video-box video").attr("src", "./videos/宾夕法尼亚大学.mp4");
